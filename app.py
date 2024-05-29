@@ -1,9 +1,11 @@
 from flask import Flask, render_template, request, jsonify
 from packages.calculator import Calculator
-from packages.mongodb import initialize_database, end_session_update, store_history, dump_data_to_file, collection
+from packages.mongodb import end_session_update, initialize_database
 import json
 
 app = Flask(__name__)
+
+calculator = Calculator()
 
 @app.route('/')
 def index():
@@ -16,18 +18,17 @@ def calculate():
     number2 = request.form.get('number2', type=float)
     operation = request.form.get('operation')
 
-    calculator = Calculator()
     calculator.set_values(number1, number2, operation)
     result = calculator.calculate()
 
     # Store calculation history
-    store_history(number1, number2, operation, result)
+    end_session_update(number1, number2, operation, result)
 
     return render_template('index.html', result=result)
 
 @app.route('/shutdown', methods=['POST'])
 def shutdown():
-    dump_data_to_file('data.json')
+    end_session_update(calculator.number1, calculator.number2, calculator.operation, calculator.result)
     shutdown_server()
     return 'Server shutting down...'
 
