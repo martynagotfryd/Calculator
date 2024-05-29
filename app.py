@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 from packages.calculator import Calculator
 from packages.mongodb import end_session_update, initialize_database
-import json
 
 app = Flask(__name__)
 
