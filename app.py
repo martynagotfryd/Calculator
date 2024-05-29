@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request, jsonify
-from packages.calculator import Calculator
-from packages.mongodb import end_session_update, initialize_database
+from flask import Flask, render_template, request
+from FinalProjectMG.package.calculator import Calculator
+from FinalProjectMG.package.mongodb import end_session_update, initialize_database
 
 app = Flask(__name__)
 
