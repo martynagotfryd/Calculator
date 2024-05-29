@@ -1,4 +1,4 @@
-from FinalProjectMG.package.calculator import Calculator
+from package.calculator import Calculator
 def test_addition():
     calc = Calculator()
     calc.set_values(3, 2, 'add')

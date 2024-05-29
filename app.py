@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
-from FinalProjectMG.package.calculator import Calculator
-from FinalProjectMG.package.mongodb import end_session_update, initialize_database
+from package.calculator import Calculator
+from package.mongodb import end_session_update, initialize_database
 
 app = Flask(__name__)
 
