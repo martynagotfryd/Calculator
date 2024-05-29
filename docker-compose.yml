@@ -17,7 +17,7 @@ services:
     depends_on:
       - mongo
     environment:
-      - MONGO_URI=mongodb://mongo:27017/calculator_database
+      - MONGO_URI=mongodb://mongo:27017/calculator
 
 volumes:
   mongo_data:
