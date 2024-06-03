@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 # Run
 
-After configuring the game_init.json file, run the Python script:
+Run the Python script in correct directory:
 
 ```
 python app.py
