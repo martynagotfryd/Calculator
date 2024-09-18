@@ -32,6 +32,10 @@ python app.py
 3. Follow the on-screen instructions to performe avalible calculations.
 
 ## Testing
+To run unit tests:
+```
+pytest
+```
 
 ## Technologies Used:
 -
