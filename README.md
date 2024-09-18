@@ -1,27 +1,40 @@
-# Calculator
-
-This is a simple browser-based Calculator implemented in Python using the Flask library.
+# Calculator Project
 
 ![Screenshot](images/calculator.png)
 
-# Installation
+## Project Overview
+The Calculator Project is a simple, yet functional browser-based program implemented in Python using the Flask library. It provides basic arithmetic operations such as addition, subtraction, multiplication, and division. The goal of this project is to serve as a foundation for further enhancements or integration into larger systems.
 
-1. Clone or download this repository to your local machine.
-2. Navigate to the project directory.
-3. Install the required Python packages using pip:
+### Features
+- Perform basic arithmetic operations:
+- Supports both integer and floating-point numbers.
+- User-friendly interface.
 
+## Installation
+
+1. Clone the repository:
+```
+git clone https://github.com/martynagotfryd/Calculatorr.git
+cd Calculatorr
+```
+2. Install dependencies:
 ```
 pip install -r requirements.txt
 ```
 
-# Run
+## Usage
 
-Run the Python script in correct directory:
-
+1. Run the Python script:
 ```
 python app.py
 ```
+2. Open a web browser and navigate to http://localhost:5000 to use calculator.
+3. Follow the on-screen instructions to performe avalible calculations.
 
-Open a web browser and navigate to http://localhost:5000 to use calculator.
+## Testing
 
-Follow the on-screen instructions to performe avalible calculations.
+## Technologies Used:
+-
+-
+-
+
